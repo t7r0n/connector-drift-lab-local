@@ -1,0 +1,32 @@
+{
+  "repo": "connector-drift-lab-local",
+  "package": "connector_drift_lab_local",
+  "cli": "connector-drift",
+  "company": "Fivetran",
+  "title": "Connector Drift Lab Local",
+  "tagline": "Offline connector schema-drift, MAR-cost, and downstream-breakage simulator.",
+  "problem": "Connector reliability is won when schema drift is detected before sync success becomes modeled-data failure.",
+  "project": "connectorforge",
+  "plan_slug": "fivetran",
+  "scenario": "connector",
+  "fixture_count": 200,
+  "clean_count": 55,
+  "metrics": [
+    "drift_detection_latency",
+    "downstream_breakage_avoided",
+    "mar_cost_forecast",
+    "quarantine_precision"
+  ],
+  "failure_modes": [
+    "silent_type_change",
+    "metadata_query_spike",
+    "api_deprecation",
+    "mar_cost_surge"
+  ],
+  "wow": "A drift preview shows which dbt models and dashboards would break before the connector sync runs.",
+  "sources": [
+    "https://www.fivetran.com/learn/data-connectors",
+    "https://www.fivetran.com/press/data-pipeline-failures-cost-enterprises-3-million-per-month-fivetran-benchmark-finds",
+    "https://fivetran.com/docs/using-fivetran/fivetran-dashboard/connectors/schema"
+  ]
+}
